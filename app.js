@@ -1,6 +1,6 @@
 var envVariables = require('./environment_config.js');
-var databaseURL = "mongodb://" + envVariables.axpUsername() + ":" + envVariables.axpPassword() + "@localhost:27017/axp";
-var databaseURL2 = "mongodb://" + envVariables.axpUsername() + ":" + envVariables.axpPassword() + "@ds049722-a0.mongolab.com:49722,ds049722-a1.mongolab.com:49722/axp?replicaSet=rs-ds049722";
+var databaseURL = "";
+var databaseURL2 = "";
 
 var dbUrl;
 if (process.env.NODE_ENV == 'production') {
